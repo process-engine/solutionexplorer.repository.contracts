@@ -1,5 +1,5 @@
-import {IDiagram, ISolution} from 'solutionexplorer.contracts';
 import {IIdentity} from '@essential-projects/core_contracts';
+import {IDiagram, ISolution} from '@process-engine/solutionexplorer.contracts';
 
 export interface ISolutionExplorerRepository {
 
