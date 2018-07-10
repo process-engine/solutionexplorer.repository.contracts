@@ -28,6 +28,14 @@ export interface ISolutionExplorerRepository {
   getDiagramByName(diagramName: string): Promise<IDiagram>;
 
   /**
+   * Get a single diagram for given path outside of a solution.
+   *
+   * @param pathToFile Full path to the file.
+   * @returns A promise, resolving to the opened diagram.
+   */
+  openSingleDiagram(pathToFile: string): Promise<IDiagram>;
+
+  /**
    * Saves the given solution and all its diagrams. If a solution already
    * exists, it will be overriden.
    *
