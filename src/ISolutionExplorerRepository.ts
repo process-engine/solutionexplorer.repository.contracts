@@ -30,7 +30,7 @@ export interface ISolutionExplorerRepository {
   /**
    * Get a single diagram for given path outside of a solution.
    *
-   * @param pathToFile Full path to the file.
+   * @param pathToDiagram Full path to the diagram.
    * @returns A promise, resolving to the opened diagram.
    */
   openSingleDiagram(pathToDiagram: string): Promise<IDiagram>;
