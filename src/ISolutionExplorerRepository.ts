@@ -33,7 +33,7 @@ export interface ISolutionExplorerRepository {
    * @param pathToFile Full path to the file.
    * @returns A promise, resolving to the opened diagram.
    */
-  openSingleDiagram(pathToFile: string): Promise<IDiagram>;
+  openSingleDiagram(pathToDiagram: string): Promise<IDiagram>;
 
   /**
    * Saves the given solution and all its diagrams. If a solution already
