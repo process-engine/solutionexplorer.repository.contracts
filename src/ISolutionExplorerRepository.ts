@@ -33,10 +33,10 @@ export interface ISolutionExplorerRepository {
    *
    * @param pathToDiagram Full path to the diagram.
    * @returns A promise, resolving to the opened diagram.
-   * @throws {ForbiddenError} When the server couldn't authorize the request
+   * @throws {ForbiddenError} When the authority couldn't authorize the request
    * with given credentials.
    * @throws {UnauthorizedError} When there where no valid authentication
-   * credentials.
+   * credentials given.
    */
   openSingleDiagram(pathToDiagram: string, identity: IIdentity): Promise<IDiagram>;
 
