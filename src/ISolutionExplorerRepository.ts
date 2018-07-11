@@ -28,10 +28,13 @@ export interface ISolutionExplorerRepository {
   getDiagramByName(diagramName: string): Promise<IDiagram>;
 
   /**
-   * Get a single diagram for given path outside of a solution.
+   * Retrieve a single diagram from the given path.
+   * It is used to open a BPMN file outside the context of a solution.
    *
    * @param pathToDiagram Full path to the diagram.
    * @returns A promise, resolving to the opened diagram.
+   * @throws {ForbiddenError}
+   * @throws {UnauthorizedError} When
    */
   openSingleDiagram(pathToDiagram: string): Promise<IDiagram>;
 
