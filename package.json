@@ -1,6 +1,6 @@
 {
   "name": "@process-engine/solutionexplorer.repository.contracts",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "",
   "main": "dist/amd/index.js",
   "typings": "dist/index.d.ts",
