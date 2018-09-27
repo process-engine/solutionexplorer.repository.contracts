@@ -1,0 +1,28 @@
+{
+  "name": "@process-engine/solutionexplorer.repository.contracts",
+  "version": "2.0.0",
+  "description": "",
+  "main": "dist/amd/index.js",
+  "typings": "dist/index.d.ts",
+  "scripts": {
+    "build": "gulp build",
+    "prepare": "npm run build",
+    "lint": "gulp lint",
+    "test": "gulp test"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@essential-projects/iam_contracts": "^3.1.0",
+    "@process-engine/solutionexplorer.contracts": "1.0.0"
+  },
+  "devDependencies": {
+    "@essential-projects/tslint-config": "1.0.0",
+    "gulp": "^3.9.1",
+    "gulptraum": "^2.3.0",
+    "gulptraum-typescript": "^1.5.0",
+    "tsconfig": "^7.0.0",
+    "tslint": "^5.10.0",
+    "typescript": "^2.8.3"
+  }
+}
