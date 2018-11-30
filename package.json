@@ -1,7 +1,7 @@
 {
   "name": "@process-engine/solutionexplorer.repository.contracts",
-  "version": "3.0.0",
-  "description": "",
+  "version": "4.0.0",
+  "description": "Contracts for all solution explorer repositories.",
   "main": "dist/amd/index.js",
   "typings": "dist/index.d.ts",
   "scripts": {
