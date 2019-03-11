@@ -23,7 +23,7 @@ export interface ISolutionExplorerRepository {
    * Get a single diagram from the current solution.
    *
    * @param diagramName The name of the diagram to load.
-   * @param pathspec The pathspec from which to load.
+   * @param pathspec The pathspec from which to load the diagram.
    * @returns A promise, resolving to the loaded diagram.
    */
   getDiagramByName(diagramName: string, pathspec?: string): Promise<IDiagram>;
