@@ -4,7 +4,7 @@ import {IDiagram, ISolution} from '@process-engine/solutionexplorer.contracts';
 export interface ISolutionExplorerRepository {
 
   watchFile(filepath: string, callback: (path: string) => void): void;
-  removeFileChangeCallback(filepath: string): void;
+  unwatchFile(filepath: string): void;
 
   /**
    * Opens the given pathspec with the identity. This method will ensure, that
