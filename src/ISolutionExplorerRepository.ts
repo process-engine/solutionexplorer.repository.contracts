@@ -3,11 +3,8 @@ import {IDiagram, ISolution} from '@process-engine/solutionexplorer.contracts';
 
 export interface ISolutionExplorerRepository {
 
-  addFileToWatch(filepath: string): void;
-  removeFileFromWatching(filepath: string): void;
-
-  addFileChangeCallback(callback: (path: string) => void): void;
-  removeFileChangeCallback(callback: (path: string) => void): void;
+  watchFile(filepath: string, callback: (path: string) => void): void;
+  removeFileChangeCallback(filepath: string): void;
 
   /**
    * Opens the given pathspec with the identity. This method will ensure, that
