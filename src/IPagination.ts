@@ -1,6 +1,6 @@
-export interface IPagination<T> {
+export interface IPagination<TEntry> {
   count: number;
   offset: number;
   limit: number;
-  data: Array<T>;
+  data: Array<TEntry>;
 }
