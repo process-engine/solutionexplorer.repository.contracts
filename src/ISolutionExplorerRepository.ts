@@ -36,7 +36,7 @@ export interface ISolutionExplorerRepository {
    */
   getDiagrams(): Promise<Array<IDiagram>>;
 
-   /**
+  /**
    * Get a single diagram from the current solution.
    *
    * @param diagramName The name of the diagram to load.
