@@ -1,7 +1,7 @@
 import {IIdentity} from '@essential-projects/iam_contracts';
 import {IDiagram, ISolution} from '@process-engine/solutionexplorer.contracts';
 
-import {IFileChangedCallback} from './index';
+import {IFileChangedCallback} from './IFileChangeCallback';
 
 export interface ISolutionExplorerRepository {
 
